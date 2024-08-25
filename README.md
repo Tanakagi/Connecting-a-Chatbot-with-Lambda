@@ -36,14 +36,17 @@ In this project I created a  chatbot named BankerBot that could help my imaginar
 
 
 <b>•  For Intent classification confidence score threshold, I kept the default value of 0.40, so that my chatbot needs</br> 
- to be at least 40% confident that it understands what the user is asking to be able to give a response.
+<b>to be at least 40% confident that it understands what the user is asking to be able to give a response.</br>
+<b>•I then clicked done.</br>
 <img src="https://github.com/Tanakagi/Cloud-Security-with-AWS-IAM/blob/88ce441e5b1ce7ee19f5121d70bc3262df613f17/Project%20images/image%201.png" height="80%" width="80%" />
 
 
-• I Navigated to Amazon Lex.
+• I navigated to my Chat bot named BankerBot and configured the Intent name as follows:
 <img src="https://github.com/Tanakagi/Cloud-Security-with-AWS-IAM/blob/88ce441e5b1ce7ee19f5121d70bc3262df613f17/Project%20images/image%201.png" height="80%" width="80%" />
 
-• I Navigated to Amazon Lex.
+<b>• I then scrolled down to the Sample utterances panel.</br>
+<b>•selected Plain Text.</br>
+<b>• Then entered the following, which represented the user inputs (called utterances) that will trigger this intent:</br>
 <img src="https://github.com/Tanakagi/Cloud-Security-with-AWS-IAM/blob/88ce441e5b1ce7ee19f5121d70bc3262df613f17/Project%20images/image%201.png" height="80%" width="80%" />
 
 • I Navigated to Amazon Lex.
