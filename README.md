@@ -166,4 +166,4 @@ This was the end of the project since I was able to successfully create a  chatb
 
 ## Lambda function
 
-[Chatbot Lambda Function code](./LICENSE)
+[Chatbot Lambda Function code](https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/5fea96b1e260af44cb17f4362e629bda4eb129ca/Chatbot%20Lambda%20Function%20code.py)
