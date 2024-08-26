@@ -124,38 +124,46 @@ In this project I created a  chatbot named BankerBot that could help my imaginar
 <b>• Connected my AWS Lambda function with your Amazon Lex chatbot.</br>
 <b>• Connected my CheckBalance intent with the Lambda function.</br>
 
-• I stated by creating the Lambda Function and configured it as follows:
+• I started by creating the Lambda Function and configured it as follows:
+<img src="https://github.com/Tanakagi/Cloud-Security-with-AWS-IAM/blob/88ce441e5b1ce7ee19f5121d70bc3262df613f17/Project%20images/image%201.png" height="80%" width="80%" />
+</br>
+
+<b>• Once the Lambda function was created I scrolled down to the Function code section and added the following Python script.</br>
+<b>• This Python script gives a random amount when the chatbot requests the account balance from a user, but in a real-life scenario,</br>
+<b> I would configure lambda to connect through a database and look for a specific user's account balance.</br>
 <img src="https://github.com/Tanakagi/Cloud-Security-with-AWS-IAM/blob/88ce441e5b1ce7ee19f5121d70bc3262df613f17/Project%20images/image%201.png" height="80%" width="80%" />
 
-• I Navigated to Amazon Lex.
+<b>**I then Connected AWS Lambda with Amazon Lex**</br>
+<b>• I went back to the Amazon Lex console and selected BankerBot.</br>
 <img src="https://github.com/Tanakagi/Cloud-Security-with-AWS-IAM/blob/88ce441e5b1ce7ee19f5121d70bc3262df613f17/Project%20images/image%201.png" height="80%" width="80%" />
 
-• I Navigated to Amazon Lex.
+<b>• I then clicked Aliases On the left-hand menu then selected the default TestBotAlias.</br>
+<b>• The TestBotAlias is a default version of your bot that's made for testing or development.</br>
+<b>• and associated the Lambda function to this TestBotAlias version of your bot.</br>
+<img src="https://github.com/Tanakagi/Cloud-Security-with-AWS-IAM/blob/88ce441e5b1ce7ee19f5121d70bc3262df613f17/Project%20images/image%201.png" height="80%" width="80%" />
+</br>
+</br>
+
+ **I then Connected my CheckBalance intent with my Lambda function**.
+<b>The Lambda function was ready to work on the BankingBot intents, but I still needed to tell Amazon Lex which intent would use the Lambda function.</br>
+
+<b>• I navigated to my CheckBalance intent and scrolled down to the Fulfilment panel.</br>
+<b>• Expanded the On successful fulfilment bubble.</br>
+<b>• and selected Advanced options.</br>
+<b>• Under the Fulfilment Lambda code hook panel, I clicked the checkbox next to Use a Lambda function for fulfilment.</br>
+<img src="https://github.com/Tanakagi/Cloud-Security-with-AWS-IAM/blob/88ce441e5b1ce7ee19f5121d70bc3262df613f17/Project%20images/image%201.png" height="80%" width="80%" />
 <img src="https://github.com/Tanakagi/Cloud-Security-with-AWS-IAM/blob/88ce441e5b1ce7ee19f5121d70bc3262df613f17/Project%20images/image%201.png" height="80%" width="80%" />
 
-• I Navigated to Amazon Lex.
+<b>• I then clicked Update options, Save intent and Build and started the 4th round of testing.</br>
+<b>• I Asked for the balance of my savings accounts and the bot was able to return (a random) bank balance figures.</br>
 <img src="https://github.com/Tanakagi/Cloud-Security-with-AWS-IAM/blob/88ce441e5b1ce7ee19f5121d70bc3262df613f17/Project%20images/image%201.png" height="80%" width="80%" />
-• I Navigated to Amazon Lex.
-<img src="https://github.com/Tanakagi/Cloud-Security-with-AWS-IAM/blob/88ce441e5b1ce7ee19f5121d70bc3262df613f17/Project%20images/image%201.png" height="80%" width="80%" />
-
-• I Navigated to Amazon Lex.
 <img src="https://github.com/Tanakagi/Cloud-Security-with-AWS-IAM/blob/88ce441e5b1ce7ee19f5121d70bc3262df613f17/Project%20images/image%201.png" height="80%" width="80%" />
 
-• I Navigated to Amazon Lex.
-<img src="https://github.com/Tanakagi/Cloud-Security-with-AWS-IAM/blob/88ce441e5b1ce7ee19f5121d70bc3262df613f17/Project%20images/image%201.png" height="80%" width="80%" />
+## End of project.
 
-### Front-end
-
+This was the end of the project since I was able to successfully create a  chatbot named BankerBot that could help my imaginary bank's customers check their account balance between accounts.
 
 
+## Lambda function
 
-## Goal
-
-The goal is to get hands-on with DevOps practices like Containerization, CICD and monitoring.
-
-Look at the capstone project for more detials.
-
-
-## License
-
-[MIT](./LICENSE)
+[Chatbot Lambda Function code](./LICENSE)
