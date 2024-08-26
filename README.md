@@ -145,7 +145,7 @@ In this project I created a  chatbot named BankerBot that could help my imaginar
 </br>
 </br>
 
- ### Task 5: Updat the chatbot to Define an AWS Lambda function that will get a user's balance.
+ ### Task 5: Updatong the chatbot to Define an AWS Lambda function that will get a user's balance.
 
 **In this task I did the following:**
 
