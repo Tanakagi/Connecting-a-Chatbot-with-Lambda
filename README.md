@@ -24,30 +24,38 @@ In this project I created a  chatbot named BankerBot that could help my imaginar
 
 • I Navigated to Amazon Lex.
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%201.png" height="80%" width="80%" />
-
+</br>
+</br>
 
 • I then started with the creation of my chat Bot and configured it as follows:
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%202.png" height="80%" width="80%" />
-
+</br>
+</br>
 
 <b>• Under IAM permissions, I selected Create a role with basic Amazon Lex permissions.</br>
 <b>That I used to call another service called Lambda later in this project, and configured the rest as follows:</br>
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%203.png" height="80%" width="80%" />
-
+</br>
+</br>
 
 <b>•  For Intent classification confidence score threshold, I kept the default value of 0.40, so that my chatbot needs</br> 
 <b>to be at least 40% confident that it understands what the user is asking to be able to give a response.</br>
 <b>•I then clicked done.</br>
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%204.png" height="80%" width="80%" />
-
+</br>
+</br>
 
 • I navigated to my Chatbot named BankerBot and configured the Intent name as follows:
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%205.png" height="80%" width="80%" />
+</br>
+</br>
 
 <b>• I then scrolled down to the Sample utterances panel.</br>
 <b>•selected Plain Text.</br>
 <b>• Then entered the following, which represented the user inputs (called utterances) that will trigger this intent:</br>
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%206.png" height="80%" width="80%" />
+</br>
+</br>
 
 <b>• I scroll down to Closing response, and expand the speech bubble for Response sent to the user after the intent is fulfilled.</br>
 <b>• In the Message field, I entered the message: `Hi! I'm BB, the Banking Bot. How can I help you today?`</br>
@@ -58,18 +66,25 @@ In this project I created a  chatbot named BankerBot that could help my imaginar
 ### Task 2: Testing
 <b>• In this task I began testing the chatbot.</br>
 <b>• In the dialogue pop-up, I interacted with the bot by entering opening message, as a way to check that I’ve set up the chatbot without any errors:</br>
-<img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%207.png" height="80%" width="80%" />
+<img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%207.png" height="50%" width="50%" />
+</br>
+</br>
 
 <b>• I then started to Manage the FallbackIntent so that the fallback intent would sound more human-like.</br>
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%208.png" height="80%" width="80%" />
+</br>
+</br>
 
 <b>• I opened the toggle labelled Variations - optional.</br>
 <b>• I Entered the following text, then clicked update response.</br>
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%209.png" height="80%" width="80%" />
+</br>
+</br>
 
 <b>• I then saved and built the changes and began the 2nd round of testing.</br>
 <b>• I tested the message that failed on my last try. The chatbot returned the closing response message I added in the previous step.</br>
-<img src="" height="80%" width="80%" />
+<img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/1cd3d583878c9ddb22ae08fe230aca4e13bc909a/Project%20Images/Image%2010.png" height="50%" width="50%" />
+</br>
 </br>
 </br>
 
@@ -79,10 +94,13 @@ In this project I created a  chatbot named BankerBot that could help my imaginar
 <b>• Then Added a blank slot type.</br>
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2011.png" height="80%" width="80%" />
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2012.png" height="80%" width="80%" />
+</br>
+</br>
 
 <b>• This brought up a large Slot types editor pane, which I configured as follows:</br>
 <b>• then Saved the slot type.</br>
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2013.png" height="80%" width="80%" />
+</br>
 </br>
 </br>
 
@@ -92,27 +110,38 @@ In this project I created a  chatbot named BankerBot that could help my imaginar
 <b>• selected Add intent, then clicked Add empty intent. Then configured the following:</br>
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2014.png" height="80%" width="80%" />
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2015.png" height="80%" width="80%" />
+</br>
+</br>
 
 <b>• I scrolled down to Sample utterances and switched to Plain Text then added the following:</br>
 <b>• This prepares Amazon Lex to look for the slot values from the user's input. Lex will automatically fill in that</br>
 <b>information and won't need to prompt the user for their accountType anymore, saving time for the user.</br>
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2016.png" height="80%" width="80%" />
+</br>
+</br>
 
 • I scrolled down to the Slots pane and added the following slot.</br>
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2017.png" height="80%" width="80%" />
+</br>
+</br>
 
 • I then did the same for a date of birth slot type.</br>
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2018.png" height="80%" width="80%" />
+</br>
+</br>
 
 <b>• I then clicked Save intent and Build to save the changes</br>
 <b>• I then started the 3rd round of testing the chatbot.</br>
-<img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2019.png" height="80%" width="80%" />
-<img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2020.png" height="80%" width="80%" />
+<img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2019.png" height="50%" width="50%" />
+<img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2020.png" height="50%" width="50%" />
+</br>
+</br>
 
 <b>• I then clicked Inspect to validate that my chatbot was set up correctly. Which it was since Amazon Lex only prompted users</br>
 <b>• for the date of birth, as it already knows that it should be the Savings account it checks.</br>
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2021.png" height="80%" width="80%" />
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2022.png" height="80%" width="80%" />
+</br>
 </br>
 </br>
 
@@ -127,20 +156,26 @@ In this project I created a  chatbot named BankerBot that could help my imaginar
 • I started by creating the Lambda Function and configured it as follows:
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2023.png" height="80%" width="80%" />
 </br>
+</br>
 
 <b>• Once the Lambda function was created I scrolled down to the Function code section and added the following Python script.</br>
 <b>• This Python script gives a random amount when the chatbot requests the account balance from a user, but in a real-life scenario,</br>
 <b> I would configure lambda to connect through a database and look for a specific user's account balance.</br>
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2025.png" height="80%" width="80%" />
+</br>
+</br>
 
 <b>**I then Connected AWS Lambda with Amazon Lex**</br>
 <b>• I went back to the Amazon Lex console and selected BankerBot.</br>
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2026.png" height="80%" width="80%" />
+</br>
+</br>
 
 <b>• I then clicked Aliases On the left-hand menu then selected the default TestBotAlias.</br>
 <b>• The TestBotAlias is a default version of your bot that's made for testing or development.</br>
 <b>• and associated the Lambda function to this TestBotAlias version of your bot.</br>
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2027.png" height="80%" width="80%" />
+</br>
 </br>
 </br>
 
@@ -153,11 +188,14 @@ In this project I created a  chatbot named BankerBot that could help my imaginar
 <b>• Under the Fulfilment Lambda code hook panel, I clicked the checkbox next to Use a Lambda function for fulfilment.</br>
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2028.png" height="80%" width="80%" />
 <img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2029.png" height="80%" width="80%" />
+</br>
+</br>
 
 <b>• I then clicked Update options, Save intent and Build and started the 4th round of testing.</br>
 <b>• I Asked for the balance of my savings accounts and the bot was able to return (a random) bank balance figures.</br>
-<img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2030.png" height="80%" width="80%" />
-<img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2031.png" height="80%" width="80%" />
+<img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2030.png" height="50%" width="50%" />
+<img src="https://github.com/Tanakagi/Connecting-a-Chatbot-with-Lambda/blob/da8cecc7d3ce5311e2af3ee2b1999acbe2aea61c/Project%20Images/Image%2031.png" height="50%" width="50%" />
+</br>
 
 ## End of project.
 
